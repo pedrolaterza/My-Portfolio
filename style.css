@@ -1,0 +1,413 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: NeuePower;
+    src: url(fonts/NeuePower-Regular.ttf);
+}
+
+@font-face {
+    font-family: NeueMontreal;
+    src: url(fonts/NeueMontreal/PPNeueMontreal-Bold.otf);
+}
+
+@font-face {
+    font-family: NeueMontrealBook;
+    src: url(fonts/NeueMontreal/PPNeueMontreal-Book.otf);
+}
+
+@font-face {
+    font-family: Aileron;
+    src: url(fonts/aileron.thin.otf);
+}
+
+@font-face {
+    font-family: Arupala;
+    src: url(fonts/ArupalaGroteskTrial-Light.ttf);
+}
+
+@font-face {
+    font-family: ArupalaUltra;
+    src: url(fonts/ArupalaGroteskTrial-Ultra.ttf);
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+header{
+    padding: 2rem;
+    max-width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    padding: 0 5rem;
+    align-items: center;
+    justify-content: center;
+    color: #0f141e;
+    gap: 50rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+li{
+    position: relative;
+    font-size: 1rem;
+    list-style: none;
+    font-family: NeueMontrealBook;
+}
+
+li::before{
+    content: "";
+    background-color: #B3B5BD;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    height: 2px;
+    width: 0;
+    transition: 0.2s ease-in-out;
+}
+
+li:hover::before{
+    content: "";
+    background-color: #B3B5BD;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    height: 2px;
+    width: 100%;
+}
+
+a{
+    color: #0f141e;
+    text-decoration: none;
+}
+
+.logo__text{
+    font-size: 35px;
+    font-family: NeuePower;
+}
+
+.main__section{
+    padding: 15rem 9.25rem;
+    width: 100%;
+    height: 630px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main__title{
+    padding: 0 0 1rem 0;
+    font-size: 80px;
+    line-height: 5rem;
+    font-family: NeueMontreal;
+    width: 740px;
+    color: #0f141e;
+}
+
+.main__subtitle{
+    color: #878a8f;
+    font-family: NeueMontrealBook;
+    width: 615px;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 0 0 1rem 0;
+}
+
+.main__name{
+    color: #878a8f;
+    font-family: NeueMontrealBook;
+    width: 615px;
+    text-align: left;
+    font-size: 13px;
+    padding: 6rem 0 0 0;
+    letter-spacing: 0.5rem;
+}
+
+.main__image{
+    width: 750px;
+    height: auto;
+    position: absolute;
+    right: 0;
+}
+
+#mouse__icon{
+    width: 20px;
+    height: 30px;
+    box-shadow: inset 0 0 0 2px #0f141e;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all .25s;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    margin-left: 605px;
+    margin-top: 45px;
+}
+
+#mouse__icon:after{
+    content: '';
+    width: 4px;
+    height: 6px;
+    background: #0f141e;
+    margin-left: 8px;
+    top: 8px;
+    border-radius: 2px;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+    position: absolute;
+    transition: background .25s;
+    animation: background 1s infinite alternate ease-in-out;
+}
+
+@keyframes background {
+    0% {
+        opacity: 1;
+        top: 8px;
+    }
+
+    100%{
+        opacity: 1;
+        top: 15px;
+    }
+
+}
+
+.main__direct-links{
+    font-family: NeueMontreal;
+    font-size: 18px;
+    padding: 0 0 5rem 0;
+}
+
+.main__or{
+    font-family: NeueMontrealBook;
+    color: #878a8f;
+    padding: 0 1rem;
+}
+
+.projects__main-texts{
+    padding: 15rem 9.25rem 10rem 9.25rem;
+}
+
+.project__title{
+    font-size: 80px;
+    line-height: 5rem;
+    font-family: NeueMontreal;
+    width: 740px;
+    color: #0f141e;
+}
+
+.project__subtitle{
+    color: #878a8f;
+    font-family: NeueMontrealBook;
+    width: 615px;
+    text-align: left;
+    font-size: 13px;
+    padding: 1rem 0;
+    letter-spacing: 0.5rem;
+    font-weight: 600;
+}
+
+.projects__gallery{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 9.25rem;
+    gap: 2rem;
+}
+
+.project__box{
+    position: relative;
+    width: 350px;
+    height: 450px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.project__texts{
+    padding: 1rem;
+}
+
+.project__name{
+    font-size: 20px;
+    font-family: NeueMontreal;
+    text-align: center;
+}
+
+.project__short-description{
+    text-align: center;
+    font-family: NeueMontrealBook;
+}
+
+.btn__box{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-left: 120px;
+    margin-top: 250px;
+}
+
+
+/* CSS */
+.see__project {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+
+}
+
+.see__project:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.see__project:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.see__project:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* FOOTER SECTION ---------------- */
+
+.footer__section{
+    width: 100%;
+    height: 500px;
+    padding: 1rem 10.25rem;
+    align-items: center;
+}
+
+.footer__box{
+    padding: 74px 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__box-information{
+    padding: 0 40px 0 0 ;
+}
+
+.footer__box-title{
+    color: #0f141e;
+    font-family: NeueMontreal;
+    padding: 2px 0 3px;
+    font-size: 22px;
+}
+
+.footer__box-desc{
+    font-family: NeueMontrealBook;
+    font-size: 16px;
+    padding: 2px 0 3px;
+    margin: 10px 0 0;
+    color: #878a8f;
+}
+
+.contact__links{
+    font-family: NeueMontrealBook;
+    color: #878a8f;
+    margin: 10px 0 0;
+    padding: 2px 0 3px;
+}
+
+.footer__box-phone span{
+    color: #0f141e;
+}
+
+.footer__latest-projects{
+    margin: 0 0 0 116.662px;
+    padding: 0 30px 0 0;
+}
+
+.footer__latest-projects h3{
+    width: 203.33px;
+}
+
+.footer__latest-projects li::before{
+    content: "";
+    background-color: #B3B5BD;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    height: 2px;
+    width: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.footer__latest-projects li:hover::before{
+    content: "";
+    background-color: #B3B5BD;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    height: 2px;
+    width: 50px;
+}
+
+.latest__projects-list{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0;
+    padding: 2px 0 3px;
+}
+
+.footer__box-availbility{
+    padding: 0 30px 0 0;
+}
+
+.footer__box-social{
+    margin: 0 0 0 116.662px;
+}
