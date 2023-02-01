@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>About | Pedro Laterza</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><p class="logo__text">Laterza</p></a>
+            <ul>
+                <li><a class="nav__links" href="index.html">Home</a></li>
+                <li><a class="nav__links" href="#">About</a></li>
+                <li><a class="nav__links" href="#">Projects</a></li>
+                <li><a class="nav__links" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="text__container">
+            <p class="first__line">A few words about me</p>
+            <h1 class="about__me">I am a skilled programmer with expertise in HTML, CSS, JavaScript, and Java. With a passion for web development, I have honed my skills in creating dynamic, interactive, and visually appealing websites.</h1>
+            <p class="about__my-experience">After 2 years of extensive experience in creating dynamic and visually appealing websites using HTML. Throughout my career, I have worked on a variety of HTML projects, from simple brochure websites to complex web applications.</p>
+    </div>
+    <!--images slider start-->
+    <div class="slider__container">
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio buttons end-->
+                <!--slide images start-->
+                <div class="slide first">
+                    <img src="img/pc1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/pc2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/pc3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/pc4.jpg" alt="">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation__auto">
+                    <div class="auto__btn1"></div>
+                    <div class="auto__btn2"></div>
+                    <div class="auto__btn3"></div>
+                    <div class="auto__btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation__manual">
+                <label for="radio1" class="manual__btn"></label>
+                <label for="radio2" class="manual__btn"></label>
+                <label for="radio3" class="manual__btn"></label>
+                <label for="radio4" class="manual__btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+        <!--image slider end-->
+    </div>
+    
+    <script type="text/javascript">
+        var counter = 1
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+
+    <div class="separation__line">
+        <div class="lineseparation"></div>
+    </div>
+
+    <footer class="footer__section">
+        <div class="footer__box">
+
+        <div class="footer__box-information">
+            <h3 class="footer__box-title">Contact Information</h3>
+            <p class="footer__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem et fugiat consectetur quae distinctio alias fuga, veritatis quo qui aspernatur.</p>
+            <div class="contact__links">
+                <p class="footer__box-email">E: <a href="mailto:laterza.henrique@gmail.com">laterza.henrique@gmail.com</a></p>
+                <p class="footer__box-phone">P: <span>+55 1198860-0997</span></p>
+            </div>
+        </div>
+        <div class="footer__latest-projects">
+            <h3 class="footer__box-title">Latest Projects</h3>
+            <ul class="latest__projects-list">
+                <li><a href="#">Iceland</a></li>
+                <li><a href="#">Iceland</a></li>
+                <li><a href="#">Iceland</a></li>
+                <li><a href="#">Iceland</a></li>
+                <li><a href="#">Iceland</a></li>
+                <li><a href="#">Iceland</a></li>
+            </ul>
+        </div>
+        <div class="footer__box-availbility">
+            <h3 class="footer__box-title">Current availability</h3>
+            <p class="footer__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ipsa qui minus rerum quisquam officia! Molestiae officiis laboriosam quas explicabo!</p>
+        </div>
+
+        <div class="footer__box-social">
+            <h3 class="footer__box-title">Follow me on</h3>
+            <ul class="socialmedia__list">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

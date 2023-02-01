@@ -1,0 +1,366 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: NeuePower;
+    src: url(fonts/NeuePower-Regular.ttf);
+}
+
+@font-face {
+    font-family: NeueMontreal;
+    src: url(fonts/NeueMontreal/PPNeueMontreal-Bold.otf);
+}
+
+@font-face {
+    font-family: NeueMontrealBook;
+    src: url(fonts/NeueMontreal/PPNeueMontreal-Book.otf);
+}
+
+@font-face {
+    font-family: Aileron;
+    src: url(fonts/aileron.thin.otf);
+}
+
+@font-face {
+    font-family: Arupala;
+    src: url(fonts/ArupalaGroteskTrial-Light.ttf);
+}
+
+@font-face {
+    font-family: ArupalaUltra;
+    src: url(fonts/ArupalaGroteskTrial-Ultra.ttf);
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+header{
+    padding: 2rem;
+    max-width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    padding: 0 5rem;
+    align-items: center;
+    justify-content: center;
+    color: #0f141e;
+    gap: 50rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+li{
+    position: relative;
+    font-size: 1rem;
+    list-style: none;
+    font-family: NeueMontrealBook;
+}
+
+li::before{
+    content: "";
+    background-color: #B3B5BD;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    height: 2px;
+    width: 0;
+    transition: 0.2s ease-in-out;
+}
+
+li:hover::before{
+    content: "";
+    background-color: #B3B5BD;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    height: 2px;
+    width: 100%;
+}
+
+a{
+    color: #0f141e;
+    text-decoration: none;
+}
+
+.logo__text{
+    font-size: 35px;
+    font-family: NeuePower;
+}
+
+.text__container{
+    width: 100%;
+    height: 500px;
+    padding: 200px 0 0;
+    text-align: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.first__line{
+    text-align: center;
+    color: #878a8f;
+    font-family: NeueMontrealBook;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin: 100px 0 0 0;
+}
+
+.about__me{
+    font-family: NeueMontreal;
+    font-size: 44px;
+    margin: 5px 0 0;
+    padding: 4px 180px 1px;
+    
+}
+
+.about__my-experience{
+    color: #878a8f;
+    font-family: NeueMontrealBook;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 2rem 15rem 0 15rem;
+}
+
+.slider__container{
+    width: 100%;
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 20px 355px;
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+
+/* CSS FOR MANUAL NAVIGATION */
+
+.navigation__manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual__btn{
+    border: 2px solid #ffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual__btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual__btn:hover{
+    background: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* CSS FOR AUTOMATIC NAVIGATION */
+
+.navigation__auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation__auto div{
+    border: 2px solid #ffff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation__auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation__auto .auto__btn1{
+    background: #ffff;
+}
+
+#radio2:checked ~ .navigation__auto .auto__btn2{
+    background: #ffff;
+}
+
+#radio3:checked ~ .navigation__auto .auto__btn3{
+    background: #ffff;
+}
+
+#radio4:checked ~ .navigation__auto .auto__btn4{
+    background: #ffff;
+}
+
+/* SEPARATION LINE*/
+
+.separation__line{
+    display: flex;
+    width: 100%;
+    margin: 2rem 0;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 30px 0 0 0;
+}
+
+.lineseparation{
+    width: 800px;
+    height: 1.5px;
+    background-color: #adaeb0;
+    margin: 2rem 0;
+}
+
+/* FOOTER SECTION ---------------- */
+
+.footer__section{
+    width: 100%;
+    height: 500px;
+    padding: 1rem 10.25rem;
+    align-items: center;
+}
+
+.footer__box{
+    padding: 74px 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__box-information{
+    padding: 0 40px 0 0 ;
+}
+
+.footer__box-title{
+    color: #0f141e;
+    font-family: NeueMontreal;
+    padding: 2px 0 3px;
+    font-size: 22px;
+}
+
+.footer__box-desc{
+    font-family: NeueMontrealBook;
+    font-size: 16px;
+    padding: 2px 0 3px;
+    margin: 10px 0 0;
+    color: #878a8f;
+}
+
+.contact__links{
+    font-family: NeueMontrealBook;
+    color: #878a8f;
+    margin: 10px 0 0;
+    padding: 2px 0 3px;
+}
+
+.footer__box-phone span{
+    color: #0f141e;
+}
+
+.footer__latest-projects{
+    margin: 0 0 0 116.662px;
+    padding: 0 30px 0 0;
+}
+
+.footer__latest-projects h3{
+    width: 203.33px;
+}
+
+.footer__latest-projects li::before{
+    content: "";
+    background-color: #B3B5BD;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    height: 2px;
+    width: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.footer__latest-projects li:hover::before{
+    content: "";
+    background-color: #B3B5BD;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    height: 2px;
+    width: 50px;
+}
+
+.latest__projects-list{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0;
+    padding: 2px 0 3px;
+}
+
+.footer__box-availbility{
+    padding: 0 30px 0 0;
+}
+
+.footer__box-social{
+    margin: 0 0 0 116.662px;
+}
