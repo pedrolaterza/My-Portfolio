@@ -103,223 +103,240 @@ a{
     font-family: NeuePower;
 }
 
-.main__section{
-    padding: 15rem 9.25rem;
-    width: 100%;
-    height: 630px;
-    background-color: white;
+.map__box{
+    padding: 160px 0 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
-.main__title{
-    padding: 0 0 1rem 0;
-    font-size: 80px;
-    line-height: 5rem;
-    font-family: NeueMontreal;
-    width: 740px;
-    color: #0f141e;
-}
-
-.main__subtitle{
-    color: #878a8f;
-    font-family: NeueMontrealBook;
-    width: 615px;
-    text-align: left;
-    letter-spacing: 1px;
-    font-size: 20px;
-    font-weight: bolder;
-    padding: 0 0 1rem 0;
-}
-
-.main__name{
-    color: #878a8f;
-    font-family: NeueMontrealBook;
-    width: 615px;
-    text-align: left;
-    font-size: 13px;
-    padding: 6rem 0 0 0;
-    letter-spacing: 0.5rem;
-}
-
-.main__image{
-    width: 750px;
-    height: auto;
+.right__text{
     position: absolute;
+    font-family: NeueMontrealBook;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #0f141e;
+    letter-spacing: 5rem;
+    line-height: 8rem;
+    margin-right: 10px;
+    margin-top: 10rem;
     right: 0;
+    top: 0;
+    font-weight: bolder;
 }
 
-#mouse__icon{
-    width: 20px;
-    height: 30px;
-    box-shadow: inset 0 0 0 2px #0f141e;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all .25s;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    margin-left: 605px;
-    margin-top: 45px;
+.map__content{
+    filter: grayscale(20%) invert(95%);
 }
 
-#mouse__icon:after{
-    content: '';
-    width: 4px;
-    height: 6px;
-    background: #0f141e;
-    margin-left: 8px;
-    top: 8px;
-    border-radius: 2px;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: scroll;
-    animation-name: scroll;
-    position: absolute;
-    transition: background .25s;
-    animation: background 1s infinite alternate ease-in-out;
+.span__color{
+    color: #B3B5BD;
 }
 
-@keyframes background {
-    0% {
-        opacity: 1;
-        top: 8px;
-    }
-
-    100%{
-        opacity: 1;
-        top: 15px;
-    }
-
+.span__color-white{
+    color: #ffff
+    ;
 }
 
-.main__direct-links{
-    font-family: NeueMontreal;
-    font-size: 18px;
-    padding: 0 0 5rem 0;
-}
-
-.main__or{
-    font-family: NeueMontrealBook;
-    color: #878a8f;
-    padding: 0 1rem;
-}
-
-.projects__main-texts{
-    padding: 15rem 9.25rem 10rem 9.25rem;
-}
-
-.project__title{
-    font-size: 80px;
-    line-height: 5rem;
-    font-family: NeueMontreal;
-    width: 740px;
-    color: #0f141e;
-}
-
-.project__subtitle{
-    color: #878a8f;
-    font-family: NeueMontrealBook;
-    width: 615px;
-    text-align: left;
-    font-size: 13px;
-    padding: 1rem 0;
-    letter-spacing: 0.5rem;
-    font-weight: 600;
-}
-
-.projects__gallery{
+.get__contact{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 9.25rem;
-    gap: 2rem;
+    padding: 140px 9.25rem 130px;
+    gap: 3rem;
 }
 
-.project__box{
-    position: relative;
-    width: 350px;
-    height: 450px;
-    color: black;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-}
-
-.project__texts{
-    padding: 1rem;
-}
-
-.project__name{
-    font-size: 20px;
-    font-family: NeueMontreal;
-    text-align: center;
-}
-
-.project__short-description{
-    text-align: center;
+.contact__minimal__text{
+    color: #878a8f;
     font-family: NeueMontrealBook;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    padding: 5px 0;
 }
 
-.btn__box{
+.getintouch__text{
+    font-family: NeueMontreal;
+    font-size: 44px;
+    margin: 5px 0 0;
+    padding: 4px 0 1px;
+    width: 450px;
+}
+
+.contact__minimal__text2{
+    color: #878a8f;
+    font-family: NeueMontrealBook;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin: 30px 0 0;
+    padding: 5px 0;
+}
+
+.my__address{
+    font-family: NeueMontrealBook;
+    padding: 1px 0 4px;
+}
+
+.right-side__box{
+    padding: 55px 0 0;
+}
+
+.have__project{
+    font-family: NeueMontrealBook;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #878a8f;
+    letter-spacing: 1px;
+    margin: 0 15px;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+}
+
+label{
+    color:#878a8f;
+    font-size: 12px;
+    padding: 1px 0 4px;
+    font-family: NeueMontrealBook;
+    display: block;
+}
+
+input{
     width: 100%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    margin-left: 120px;
-    margin-top: 250px;
+    height: 45px;
+    padding: 8px 0 6px;
+    outline: none;
+    font-family: NeueMontrealBook;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+    color: #0f141e;
+    padding: 8px 0 6px 0;
+    border: 1px solid #e7e8e9;
+    border-width: 0 0 1px 0;
 }
 
+input::placeholder{
+    width: 100%;
+    height: 45px;
+    padding: 8px 0 6px;
+    outline: none;
+    font-family: NeueMontrealBook;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+    color: #0f141e;
+    padding: 8px 0 6px 0;
+    border: 1px solid #e7e8e9;
+    border-width: 0 0 1px 0;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid #0f0f0f;
+    border-width: 0 0 1px 0;
+    transition: 0.2s ease;
+}
+
+.first__column{
+    display: flex;
+    flex-direction: row;
+}
+
+.name__space{
+    padding: 0 15px;
+    width: 365px;
+    height: 115px;
+}
+
+.email__space{
+    padding: 0 15px;
+    width: 365px;
+    height: 115px;
+}
+
+.second__column{
+    padding: 0 15px;
+}
+
+textarea{
+    width: 100%;
+    height: 45px;
+    padding: 8px 0 6px;
+    outline: none;
+    font-family: NeueMontrealBook;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+    color: #0f141e;
+    padding: 8px 0 6px;
+    border: 1px solid #e7e8e9;
+    border-width: 0 0 1px 0;
+    overflow: hidden;
+    resize: none;
+}
+
+textarea::placeholder{
+    width: 100%;
+    height: 45px;
+    padding: 8px 0 6px;
+    outline: none;
+    font-family: NeueMontrealBook;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+    color: #0f141e;
+    padding: 8px 0 6px 0;
+    border: 1px solid #e7e8e9;
+    border-width: 0 0 1px 0;
+}
+
+textarea:focus{
+    outline: none;
+    border: 1px solid #0f0f0f;
+    border-width: 0 0 1px 0;
+    transition: 0.2s ease;
+}
 
 /* CSS */
-.see__project {
-  align-items: center;
-  appearance: none;
-  background-color: #FCFCFD;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+.send__btn {
+  text-align: center;
+  width: 160px;
+  height: 45px;
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: .5rem;
   box-sizing: border-box;
-  color: #000;
+  color: #111827;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   cursor: pointer;
-  display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 18px;
-
+  margin-top: 45px;
 }
 
-.see__project:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+.send__btn:hover {
+  background-color: rgb(249,250,251);
 }
 
-.see__project:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-2px);
+.send__btn:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
-.see__project:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
-  transform: translateY(2px);
+.send__btn:focus-visible {
+  box-shadow: none;
 }
 
 /* SEPARATION LINE*/
