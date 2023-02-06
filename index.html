@@ -30,7 +30,15 @@
                 <p class="main__direct-links"><a href="#">See Projects </a><span class="main__or">or</span><a href="#"> Read About Me</a></p>
                 <div id="mouse__icon"></div>
             </div>
-            <img src="img/pedro4.png" alt="" class="main__image">
+            <img src="img/pedro4.png" alt="" class="main__image" id="header-image">
+
+            <script>
+                window.onscroll = function() {
+                    var headerImage = document.getElementById("header-image");
+                    var headerImageOpacity = 1 - 0. - window.pageYOffset / headerImage.clientHeight;
+                    headerImage.style.opacity = headerImageOpacity;
+                    };
+            </script>
 
     </main>
 
@@ -40,39 +48,59 @@
             <h2 class="project__title">Case studies</h2>
         </div>
         <div class="projects__gallery">
-            <div class="project__box">
-                <img src="" alt="" class="project__image">
-                    <div class="project__texts">
-                        <h3 class="project__name">Project 1</h3>
-                        <p class="project__short-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nobis?</p>
-                    </div>
-                    <div class="btn__box">
-                        <button class="see__project">Ver Mais</button>
-                    </div>
-                    
-            </div>
-            <div class="project__box">
-                <img src="" alt="" class="project__image">
-                    <div class="project__texts">
-                        <h3 class="project__name">Project 1</h3>
-                        <p class="project__short-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nobis?</p>
-                    </div>
-                    <div class="btn__box">
-                        <button class="see__project">Ver Mais</button>
-                    </div>
-                    
-            </div>
-            <div class="project__box">
-                <img src="" alt="" class="project__image">
-                    <div class="project__texts">
-                        <h3 class="project__name">Project 1</h3>
-                        <p class="project__short-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nobis?</p>
-                    </div>
-                    <div class="btn__box">
-                        <button class="see__project">Ver Mais</button>
-                    </div>
-                    
-            </div>
+            <a href="">
+                <div class="project__box">
+                    <img src="" alt="" class="project__image">
+                        <div class="project__texts">
+                            <h3 class="project__name">Project 1</h3>
+                            <p class="project__short-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nobis?</p>
+                        </div>  
+                </div>
+            <a href="">
+                <div class="project__box">
+                    <img src="" alt="" class="project__image">
+                        <div class="project__texts">
+                            <h3 class="project__name">Project 1</h3>
+                            <p class="project__short-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nobis?</p>
+                        </div>   
+                </div>
+            </a>
+            <a href="">
+                <div class="project__box">
+                    <img src="" alt="" class="project__image">
+                        <div class="project__texts">
+                            <h3 class="project__name">Project 1</h3>
+                            <p class="project__short-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nobis?</p>
+                        </div>  
+                </div>
+            </a>
+            <a href="">
+                <div class="project__box">
+                    <img src="" alt="" class="project__image">
+                        <div class="project__texts">
+                            <h3 class="project__name">Project 1</h3>
+                            <p class="project__short-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nobis?</p>
+                        </div>  
+                </div>
+            </a>
+            <a href="">
+                <div class="project__box">
+                    <img src="" alt="" class="project__image">
+                        <div class="project__texts">
+                            <h3 class="project__name">Project 1</h3>
+                            <p class="project__short-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nobis?</p>
+                        </div>  
+                </div>
+            </a>
+            <a href="">
+                <div class="project__box">
+                    <img src="" alt="" class="project__image">
+                        <div class="project__texts">
+                            <h3 class="project__name">Project 1</h3>
+                            <p class="project__short-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nobis?</p>
+                        </div>  
+                </div>
+            </a>
         </div>
     </section>
 
