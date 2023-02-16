@@ -144,6 +144,7 @@ a{
     gap: 3rem;
 }
 
+
 .contact__minimal__text{
     color: #878a8f;
     font-family: NeueMontrealBook;
@@ -446,4 +447,327 @@ textarea:focus{
 
 .footer__box-social{
     margin: 0 0 0 116.662px;
+}
+
+/* RESPOSIVO =================== */
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    body{
+        max-width: 100%;
+
+    }
+
+    header{
+        width: 100%;
+        padding: 1rem;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    nav{
+        display: flex;
+        padding: 0 5rem;
+        align-items: center;
+        justify-content: center;
+        color: #0f141e;
+        gap: 20rem;
+    }
+    
+    .logo__text{
+        font-size: 35px;
+        font-family: NeuePower;
+    }
+
+    .map__box{
+        padding: 100px 0 0;
+        display: flex;
+    }
+    
+    .right__text{
+        position: absolute;
+        font-family: NeueMontrealBook;
+        font-weight: 700;
+        font-size: 70px;
+        text-transform: uppercase;
+        text-align: right;
+        color: #0f141e;
+        letter-spacing: 5rem;
+        line-height: 8rem;
+        margin: 5rem 0 0 3rem;
+        right: 0;
+        top: 0;
+        font-weight: bolder;
+    }
+    
+    .map__content{
+        filter: grayscale(20%) invert(95%);
+        width: 630px;
+        height: 360px;
+    }
+
+    .span__color{
+        color: #B3B5BD;
+    }
+    
+    .span__color-white{
+        color: #ffff
+        ;
+    }
+    
+    .get__contact{
+        display: flex;
+        flex-direction: column;
+        padding: 6.25rem 0 5rem;
+        gap: 3rem;
+    }
+    
+    .contact__minimal__text{
+        color: #878a8f;
+        font-family: NeueMontrealBook;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        padding: 5px 0;
+    }
+    
+    .getintouch__text{
+        font-family: NeueMontreal;
+        font-size: 44px;
+        margin: 5px 0 0;
+        padding: 4px 0 1px;
+        width: 450px;
+    }
+    
+    .contact__minimal__text2{
+        color: #878a8f;
+        font-family: NeueMontrealBook;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        margin: 30px 0 0;
+        padding: 5px 0;
+    }
+    
+    .my__address{
+        font-family: NeueMontrealBook;
+        padding: 1px 0 4px;
+    }
+
+    .left-side__text{
+        padding: 0 1.875rem
+    }
+    
+    .right-side__box{
+        padding: 0 1.875rem;
+    }
+    
+    .have__project{
+        font-family: NeueMontrealBook;
+        font-size: 22px;
+        font-weight: bolder;
+        color: #878a8f;
+        letter-spacing: 1px;
+        margin: 0 15px;
+    }
+    
+    .contact__form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 55px;
+    }
+    
+    label{
+        color:#878a8f;
+        font-size: 12px;
+        padding: 1px 0 4px;
+        font-family: NeueMontrealBook;
+        display: block;
+    }
+    
+    input{
+        width: 100%;
+        height: 45px;
+        padding: 8px 0 6px;
+        outline: none;
+        font-family: NeueMontrealBook;
+        font-size: 1.125rem;
+        line-height: 1.875rem;
+        font-weight: 500;
+        color: #0f141e;
+        padding: 8px 0 6px 0;
+        border: 1px solid #e7e8e9;
+        border-width: 0 0 1px 0;
+    }
+    
+    input::placeholder{
+        width: 100%;
+        height: 45px;
+        padding: 8px 0 6px;
+        outline: none;
+        font-family: NeueMontrealBook;
+        font-size: 1.125rem;
+        line-height: 1.875rem;
+        font-weight: 500;
+        color: #0f141e;
+        padding: 8px 0 6px 0;
+        border: 1px solid #e7e8e9;
+        border-width: 0 0 1px 0;
+    }
+    
+    input:focus{
+        outline: none;
+        border: 1px solid #0f0f0f;
+        border-width: 0 0 1px 0;
+        transition: 0.2s ease;
+    }
+    
+    .first__column{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .name__space{
+        padding: 0 15px;
+        width: 365px;
+        height: 115px;
+    }
+    
+    .email__space{
+        padding: 0 15px;
+        width: 365px;
+        height: 115px;
+    }
+    
+    .second__column{
+        padding: 0 15px;
+    }
+    
+    textarea{
+        width: 100%;
+        height: 45px;
+        padding: 8px 0 6px;
+        outline: none;
+        font-family: NeueMontrealBook;
+        font-size: 1.125rem;
+        line-height: 1.875rem;
+        font-weight: 500;
+        color: #0f141e;
+        padding: 8px 0 6px;
+        border: 1px solid #e7e8e9;
+        border-width: 0 0 1px 0;
+        overflow: hidden;
+        resize: none;
+    }
+    
+    textarea::placeholder{
+        width: 100%;
+        height: 45px;
+        padding: 8px 0 6px;
+        outline: none;
+        font-family: NeueMontrealBook;
+        font-size: 1.125rem;
+        line-height: 1.875rem;
+        font-weight: 500;
+        color: #0f141e;
+        padding: 8px 0 6px 0;
+        border: 1px solid #e7e8e9;
+        border-width: 0 0 1px 0;
+    }
+    
+    textarea:focus{
+        outline: none;
+        border: 1px solid #0f0f0f;
+        border-width: 0 0 1px 0;
+        transition: 0.2s ease;
+    }
+    
+    /* CSS */
+    .send__btn {
+      text-align: center;
+      width: 160px;
+      height: 45px;
+      background-color: #FFFFFF;
+      border: 0;
+      border-radius: .5rem;
+      box-sizing: border-box;
+      color: #111827;
+      font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+      font-size: .875rem;
+      font-weight: 600;
+      line-height: 1.25rem;
+      padding: .75rem 1rem;
+      text-align: center;
+      text-decoration: none #D1D5DB solid;
+      text-decoration-thickness: auto;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      margin-top: 45px;
+    }
+    
+    .send__btn:hover {
+      background-color: rgb(249,250,251);
+    }
+    
+    .send__btn:focus {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+    }
+    
+    .send__btn:focus-visible {
+      box-shadow: none;
+    }
+    
+    /* SEPARATION LINE*/
+    
+    .separation__line{
+        display: flex;
+        width: 100%;
+        margin: 2rem 0;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        margin: 30px 0 0 0;
+    }
+    
+    .lineseparation{
+        width: 800px;
+        height: 1.5px;
+        background-color: #adaeb0;
+        margin: 2rem 0;
+    }
+    
+
+    
+
+    .footer__section{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 1.875rem;
+    }
+
+    .footer__box{
+        padding: 4rem 0 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer__box-information{
+        padding: 0;
+    }
+
+    .footer__box-desc{
+        width: 200px;
+    }
+
+
+
 }

@@ -364,3 +364,143 @@ a{
 .footer__box-social{
     margin: 0 0 0 116.662px;
 }
+
+
+
+/* RESPONSIVO ========================== */
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header{
+        width: 100%;
+        padding: 1rem;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    nav{
+        display: flex;
+        padding: 0 5rem;
+        align-items: center;
+        justify-content: center;
+        color: #0f141e;
+        gap: 20rem;
+    }
+    
+    .logo__text{
+        font-size: 35px;
+        font-family: NeuePower;
+    }
+
+    .text__container{
+        width: 100%;
+        height: 500px;
+        padding: 200px 0 0;
+        text-align: center;
+        align-items: center;
+        padding: 0 40px;
+    }
+    
+    .first__line{
+        text-align: center;
+        color: #878a8f;
+        font-family: NeueMontrealBook;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        margin: 100px 0 0 0;
+    }
+    
+    .about__me{
+        font-family: NeueMontreal;
+        font-size: 2.75rem;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 1rem;
+        line-height: 3.125rem;
+        
+    }
+    
+    .about__my-experience{
+        color: #878a8f;
+        font-family: NeueMontrealBook;
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: bolder;
+        padding: 2px 0 3px;
+    }
+
+    .slider__container{
+        display: flex;
+        width: 100%;
+        height: 550px;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 5rem 1rem 5rem;
+
+    }
+    
+    .slider{
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        justify-content: center;
+    }
+    
+    .slides{
+        width: 500%;
+        height: 500px;
+        display: flex;
+    }
+    
+    .slides input{
+        display: none;
+    
+    }
+    
+    .slide{
+        width: 20%;
+        transition: 2s;
+    }
+    
+    .slide img{
+        width: 100%;
+        height: 500px;
+    }
+
+    
+
+    .footer__section{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 1.875rem;
+    }
+
+    .footer__box{
+        padding: 4rem 0 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer__box-information{
+        padding: 0;
+    }
+
+    .footer__box-desc{
+        width: 200px;
+    }
+
+
+
+}
